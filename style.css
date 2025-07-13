@@ -6,74 +6,63 @@ body {
   color: #000000;
 }
 
-/* Header and Logo */
 header {
-  background: linear-gradient(to right, #0f2027, #203a43, #2c5364);
-  color: white;
-  padding: 2rem 1rem 1.5rem;
+  background-color: #000000;
+  color: #ffffff;
+  padding: 1rem;
   text-align: center;
-  margin-bottom: 1rem;
 }
 
-.header-content {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 0.75rem;
-  padding-top: 1rem;
-}
-
-.logo {
-  width: 100px;
-  height: auto;
-  margin-bottom: 0.75rem;
-  filter: drop-shadow(2px 4px 6px rgba(0, 0, 0, 0.2));
-}
-
-.title-area h1 {
+h1 {
+  margin: 0;
   font-family: 'Lora', serif;
-  font-size: 2.5rem;
-  margin: 0.25rem 0;
 }
 
-.title-area .tagline {
+.tagline {
   font-style: italic;
-  color: #b5d9ff;
-  font-size: 1rem;
-}
-
-/* Navigation */
-nav {
-  margin-top: 0.75rem;
+  color: #4a90e2; /* blue accent */
 }
 
 nav a {
-  color: #b5d9ff;
-  margin: 0 1rem;
+  color: #4a90e2;
   text-decoration: none;
-  font-weight: 500;
-  font-size: 1rem;
+  margin: 0 1rem;
 }
 
-nav a:hover {
-  text-decoration: underline;
-}
-
-/* Main Content */
 main {
   padding: 2rem;
 }
 
-main h2 {
-  font-size: 1.75rem;
-  margin-top: 3rem;
-  margin-bottom: 1rem;
-  border-left: 5px solid #4a90e2;
-  padding-left: 0.75rem;
-  font-weight: 600;
+.book-list {
+  list-style: none;
+  padding: 0;
 }
 
-/* Book Grid */
+.book-list li {
+  margin-bottom: 2rem;
+  border-bottom: 1px solid #ddd;
+  padding-bottom: 1rem;
+}
+
+.book-comment {
+  color: #333;
+  font-style: italic;
+}
+
+footer {
+  text-align: center;
+  padding: 1rem;
+  background-color: #f0f0f0;
+  font-size: 0.9rem;
+  color: #666;
+}
+.bio-photo {
+  max-width: 200px;
+  border-radius: 12px;
+  display: block;
+  margin: 1rem auto;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
 .book-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
@@ -114,7 +103,6 @@ main h2 {
   font-size: 1.2rem;
 }
 
-/* Publisher Button */
 .publisher-link {
   margin-top: 0.75rem;
   display: inline-block;
@@ -129,8 +117,6 @@ main h2 {
 .publisher-link:hover {
   background-color: #336bb3;
 }
-
-/* Currently Reading Section */
 .currently-reading {
   display: flex;
   flex-direction: row;
@@ -170,39 +156,4 @@ main h2 {
   font-style: italic;
   color: #333;
   margin-bottom: 1rem;
-}
-
-/* Bio Photo Styling */
-.bio-photo {
-  max-width: 200px;
-  border-radius: 12px;
-  display: block;
-  margin: 1rem auto;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-}
-
-/* Emery Thoughts Styling */
-.emery-thoughts {
-  text-align: left;
-  margin-top: 0.5rem;
-}
-
-.emery-thoughts .label {
-  display: block;
-  font-weight: bold;
-  margin-bottom: 0.1rem;
-}
-
-.emery-thoughts .comment {
-  display: block;
-  font-style: italic;
-  color: #333;
-}
-
-/* Footer */
-footer {
-  text-align: center;
-  padding: 2rem 0;
-  font-size: 0.85rem;
-  color: #888;
 }
