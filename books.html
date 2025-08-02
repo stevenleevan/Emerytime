@@ -2,19 +2,34 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Emery Book I've Read</title>
-  <link rel="stylesheet" href="style-books.css" />
-  <link href="https://fonts.googleapis.com/css2?family=Lora&family=Inter&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&family=Lora&display=swap" rel="stylesheet">
 </head>
 <body>
   <header>
-    <h1>Emery Book I've Read</h1>
-    <p class="tagline">Books I've read. Thoughts I've had.</p>
-    <nav>
-      <a href="index.html">Home</a>
-    </nav>
+    <div class="top-bar">
+      <a href="index.html" class="logo-link">
+        <span class="logo-dark">emerytime</span><span class="logo-dot">.</span>
+      </a>
+      <div class="nav-links">
+        <a href="books.html">Books</a>
+        <a href="games.html">Games</a>
+        <a href="movies.html">Movies</a>
+        <a href="places.html">Places</a>
+        <a href="hobbies.html">Hobbies</a>
+        <button class="toggle-mode" onclick="toggleMode()" id="modeIcon" aria-label="Toggle light/dark mode">
+          <!-- Default moon -->
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" stroke="#000000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-moon"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
+        </button>
+      </div>
+    </div>
   </header>
+
+  <main class="books-page">
+    <h1 class="welcome-header">Emery Book I've Read</h1>
+    <p class="summary-text">Books I’ve read. Thoughts I’ve had.</p>
 
   <main>
     <!-- Currently Reading -->
@@ -196,5 +211,6 @@
   <footer>
     <p>&copy; 2025 E.S.V.</p>
   </footer>
+  <script src="script.js"></script>
 </body>
 </html>
