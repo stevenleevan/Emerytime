@@ -4,7 +4,8 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <link rel="stylesheet" href="style.css" />
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&family=Lora&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
 </head>
 <body>
   <header>
@@ -19,197 +20,21 @@
         <a href="places.html">Places</a>
         <a href="hobbies.html">Hobbies</a>
         <button class="toggle-mode" onclick="toggleMode()" id="modeIcon" aria-label="Toggle light/dark mode">
-          <!-- Default moon -->
-          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" stroke="#000000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-moon"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
+          <svg id="moonIcon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" stroke="#000000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-moon"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
         </button>
       </div>
     </div>
   </header>
 
-  <main class="books-page">
-    <h1 class="welcome-header">Emery Book I've Read</h1>
-    <p class="summary-text">Books I’ve read. Thoughts I’ve had.</p>
-
-  <main>
-    <!-- Currently Reading -->
-<section>
-  <h2>Currently Reading</h2>
-  <div class="currently-reading">
-    <img src="images/eragon.jpg" alt="Eragon - The Inheritance Cycle">
-    <div class="currently-reading-content">
-      <div class="tag">📚</div>
-      <h3>The Inheritance Cycle</h3>
-      <h4>Christopher Paolini and Sidharth Chaturvedi</h4>
-      <strong>Emery’s Thoughts 💬</strong>
-      <p>I love dragons, magic and battling so it is the perfect book for me!</p>
-      <a class="publisher-link" href="https://www.paolini.net/biographies/christopher-paolini-full/inheritance-cycle/" target="_blank">Publisher Site</a>
-    </div>
-    <img src="images/the_lord_of_the_rings_series.jpg" alt="The Lord of the Rings">
-    <div class="currently-reading-content">
-      <div class="tag">📚</div>
-      <h3>The Lord of the Rings</h3>
-      <h4>J. R. R. Tolkien</h4>
-      <strong>Emery’s Thoughts 💬</strong>
-      <p>Thoughts are here!</p>
-      <a class="publisher-link" href="https://www.tolkienestate.com/writing/#thelordoftherings" target="_blank">Publisher Site</a>
-    </div>
-  </div>
-
-  
-</section>
-
-    <!-- On the Shelf -->
-    <section>
-      <h2>On the Shelf (Books I've Read)</h2>
-      <div class="book-grid">
-
-        <div class="book-card">
-          <div class="tag">📖</div>
-          <img src="images/boy_with_the_butterfly_mind.jpg" alt="Boy with the Butterfly Mind">
-          <h3>Boy with the Butterfly Mind</h3>
-          <h4>Victoria Williamson</h4>
-          <strong>🙋‍♂️💬</strong>
-          <p>I liked how the author captured a modern day problem and turned it into a book.</p>
-          <a class="publisher-link" href="https://strangelymagical.com/books/the-boy-with-the-butterfly-mind/" target="_blank">Publisher Site</a>
-        </div>
-
-        <div class="book-card">
-          <div class="tag">📚</div>
-          <img src="images/dragon_masters_series.png" alt="Dragon Masters Series">
-          <h3>Dragon Masters Series</h3>
-          <h4>Tracey West</h4>
-          <strong>🙋‍♂️💬</strong>
-          <p>Great quick reads with dragons, each book feels like a fun adventure in a magical world.</p>
-          <a class="publisher-link" href="https://www.traceywest.com/series/dragon-masters-series/" target="_blank">Publisher Site</a>
-        </div>
-
-        <div class="book-card">
-          <div class="tag">📚</div>
-          <img src="images/the_green_ember_series.jpg" alt="Green Ember Series">
-          <h3>The Green Ember Series</h3>
-          <h4>S.D. Smith</h4>
-          <strong>🙋‍♂️💬</strong>
-          <p>Rabbit warriors fighting against a hawk army lead by a hawk named Morbin Blackhawk.</p>
-          <a class="publisher-link" href="https://sdsmith.com/the-green-ember-series/" target="_blank">Publisher Site</a>
-        </div>
-
-        <div class="book-card">
-          <div class="tag">📚</div>
-          <img src="images/harry_potter_series.jpg" alt="Harry Potter Series">
-          <h3>Harry Potter Series</h3>
-          <h4>J. K. Rowling</h4>
-          <strong>🙋‍♂️💬</strong>
-          <p>Magic, school, and danger. I couldn’t stop reading once I started, I would just lay in my bed reading and reading and reading.</p>
-          <a class="publisher-link" href="https://www.jkrowling.com/writing/" target="_blank">Publisher Site</a>
-        </div>
-
-        <div class="book-card">
-          <div class="tag">📖</div>
-          <img src="images/hatchet_book.jpg" alt="Hatchet">
-          <h3>Hatchet</h3>
-          <h4>Gary Paulsen</h4>
-          <strong>🙋‍♂️💬</strong>
-          <p>Surviving the wilderness. I think that anyone who likes survival books should definitely read this.</p>
-          <a class="publisher-link" href="https://www.simonandschuster.com/books/Hatchet/Gary-Paulsen/9781481486293" target="_blank">Publisher Site</a>
-        </div>
-
-         <div class="book-card">
-          <div class="tag">📖</div>
-          <img src="images/hobbit_book.jpg" alt="Hobbit">
-          <h3>The Hobbit</h3>
-          <h4>J. R. R. Tolkien</h4>
-          <strong>🙋‍♂️💬</strong>
-          <p>Danger, adventure, dwarves, elves, orks, goblins and wizards. A truly awesome book that has that kind of scary but not too scary feeling.</p>
-          <a class="publisher-link" href="https://www.tolkienestate.com/writing/#thehobbit" target="_blank">Publisher Site</a>
-        </div>
-
-        <div class="book-card">
-          <div class="tag">📖</div>
-          <img src="images/mr_poppers_penguins.jpeg" alt="Mr. Popper's Penguins">
-          <h3>Mr. Popper's Penguins</h3>
-          <h4>Richard and Florence Atwater</h4>
-          <strong>🙋‍♂️💬</strong>
-          <p>So funny, I gaurantee that at least twice you will laugh. Mr. Popper is a painter hwo longs to go to the arctic and sends a letter to an arctic explorer named admiral Drake, telling him how much he loves the arctic and penguins.</p>
-          <a class="publisher-link" href="https://www.hachettebookgroup.com/titles/richard-atwater/mr-poppers-penguins-newbery-honor-book/9780316058421/?lens=little-brown-books-for-young-readers" target="_blank">Publisher Site</a>
-        </div>
-
-        <div class="book-card">
-          <div class="tag">📖</div>
-          <img src="images/my_side_of_the_mountain.jpg" alt="My Side of the Mountain">
-          <h3>My Side of the Mountain</h3>
-          <h4>Jean Craighead George</h4>
-          <strong>🙋‍♂️💬</strong>
-          <p>A kid surviving the woods after running away from home.</p>
-          <a class="publisher-link" href="https://www.jeancraigheadgeorge.com/books.html" target="_blank">Publisher Site</a>
-        </div>
-
-        <div class="book-card">
-          <div class="tag">📚</div>
-          <img src="images/the_mysteriuos_benedict_society_series.png" alt="Mysterious Benedict Society">
-          <h3>Mysterious Benedict Society Series</h3>
-          <h4>Trenton Lee Stewart</h4>
-          <strong>🙋‍♂️💬</strong>
-          <p>Kids solving problems. I liked how each one had such different character traits.</p>
-          <a class="publisher-link" href="https://www.mysteriousbenedictsociety.com/series" target="_blank">Publisher Site</a>
-        </div>
-
-        <div class="book-card">
-          <div class="tag">📚</div>
-          <img src="images/pax_book.png" alt="Pax">
-          <h3>The Pax Series</h3>
-          <h4>Sara Pennypacker</h4>
-          <strong>🙋‍♂️💬</strong>
-          <p>It was amazing! I loved that it was about animals because I love books about animals so of course I loved it.</p>
-          <a class="publisher-link" href="http://www.sarapennypacker.com/pennypacker-pax.htm" target="_blank">Publisher Site</a>
-        </div>
-
-        <div class="book-card">
-          <div class="tag">📖</div>
-          <img src="images/peter_pan_book.jpg" alt="Peter Pan">
-          <h3>Peter Pan</h3>
-          <h4>J. M. Barrie</h4>
-          <strong>🙋‍♂️💬</strong>
-          <p>There was adventure and magic. I liked it so much I kept listening to the audio book over and over again.</p>
-          <a class="publisher-link" href="https://jmbarrie.co.uk" target="_blank">Publisher Site</a>
-        </div>
-
-        <div class="book-card">
-          <div class="tag">📚</div>
-          <img src="images/the_secret_series.png" alt="The Secret Series">
-          <h3>The Secret Series</h3>
-          <h4>Pseudonymous Bosch</h4>
-          <strong>🙋‍♂️💬</strong>
-          <p>It was absolutely amazing. I liked the secrets and the narrator talking to me.</p>
-          <a class="publisher-link" href="https://www.pseudonymousbosch.com/bosch-books" target="_blank">Publisher Site</a>
-        </div>
-
-         <div class="book-card">
-          <div class="tag">📚</div>
-          <img src="images/the_wild_robot_series.jpg" alt="Wild Robot">
-          <h3>The Wild Robot Series</h3>
-          <h4>Peter Brown</h4>
-          <strong>🙋‍♂️💬</strong>
-          <p>A heart warming story with some danger. Roz, a robot, is isolated on an island and has to become a wild robot to survive.</p>
-          <a class="publisher-link" href="https://www.peterbrownstudio.com/books/" target="_blank">Publisher Site</a>
-        </div>
-
-        <div class="book-card">
-          <div class="tag">📚</div>
-          <img src="images/the_wingfeather_saga.jpg" alt="Wing Feather Saga">
-          <h3>The Wing Feather Saga</h3>
-          <h4>Andrew Peterson</h4>
-          <strong>🙋‍♂️💬</strong>
-          <p>Funny, deep, and exciting. The world is so amazing and there's a lot of mystery and a little bit of magic.</p>
-          <a class="publisher-link" href="https://www.wingfeathersaga.com" target="_blank">Publisher Site</a>
-        </div>
-
-      </div>
-    </section>
+  <main class="splash-main">
+    <img src="images/coming-soon.png" alt="Coming Soon" class="splash-logo" />
+    <h1 class="welcome-header">Coming Soon!</h1>
+    <p class="summary-text">
+      Emery is still working on this part of the site.<br />
+      Come back soon to explore more fun stuff!
+    </p>
   </main>
 
-  <footer>
-    <p>&copy; 2025 E.S.V.</p>
-  </footer>
   <script src="script.js"></script>
 </body>
 </html>
