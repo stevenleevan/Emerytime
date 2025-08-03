@@ -105,6 +105,34 @@ body {
   padding: 0 1rem;
 }
 
+/* Book Page Header Styling */
+
+.page-hero {
+  text-align: center;
+  padding: 2rem 1rem 1.5rem;
+}
+
+.page-heading {
+  font-size: 2.25rem;
+  font-weight: 700;
+  color: #0f3d62;
+  margin-bottom: 0.5rem;
+}
+
+.page-tagline {
+  font-size: 1.1rem;
+  color: #666;
+  font-style: italic;
+}
+
+body.dark-mode .page-heading {
+  color: #87cefa;
+}
+
+body.dark-mode .page-tagline {
+  color: #ccc;
+}
+
 /* Book Page Styling */
 main {
   padding: 2rem;
