@@ -316,3 +316,102 @@ body.dark-mode .currently-reading {
     line-height: 1.6;
   }
 }
+
+/* ---------- Games page ---------- */
+
+/* Optional: highlight current nav link */
+.nav-links a.active {
+  font-weight: 700;
+  transform: scale(1.05);
+  transition: transform 0.2s ease;
+}
+
+/* Reuse the hero style we introduced for Books */
+.page-hero-box {
+  background-color: #f0f8ff;
+  padding: 2.5rem 1rem;
+  border-bottom: 1px solid #ccc;
+  text-align: center;
+}
+.page-hero-box h1 {
+  font-family: 'Lora', serif;
+  font-size: 2.25rem;
+  color: #0f3d62;
+  margin: 0 0 0.5rem;
+}
+.page-hero-box p {
+  color: #444;
+  font-style: italic;
+  margin: 0;
+}
+
+body.dark-mode .page-hero-box {
+  background-color: #202e3a;
+  border-color: #333;
+}
+body.dark-mode .page-hero-box h1 {
+  color: #87cefa;
+}
+body.dark-mode .page-hero-box p {
+  color: #ccc;
+}
+
+/* Game grids/cards (parallel to book-grid/book-card, but separate) */
+.game-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+  gap: 1.5rem;
+  padding: 1rem 0 2rem;
+}
+
+.game-card {
+  background: #f9f9f9;
+  border: 1px solid #ddd;
+  border-radius: 12px;
+  padding: 1rem;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+  text-align: center;
+  transition: transform 120ms ease, box-shadow 120ms ease;
+}
+.game-card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 14px rgba(0,0,0,0.09);
+}
+
+.game-card img {
+  max-width: 160px;
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+  margin-bottom: 0.75rem;
+}
+
+.game-card h3 {
+  margin: 0.25rem 0 0.35rem;
+  font-size: 1.05rem;
+}
+
+.game-card p {
+  margin: 0;
+  color: #333;
+  font-size: 0.95rem;
+}
+
+body.dark-mode .game-card {
+  background: #2a2a2a;
+  border-color: #444;
+}
+body.dark-mode .game-card p,
+body.dark-mode .game-card h3 {
+  color: #f1f1f1;
+}
+
+/* Mobile niceties */
+@media (max-width: 480px) {
+  .page-hero-box h1 {
+    font-size: 1.75rem;
+  }
+  .game-card img {
+    max-width: 140px;
+  }
+}
