@@ -3,9 +3,9 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Emery Game I've Played</title>
   <link rel="stylesheet" href="style.css" />
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&family=Lora&display=swap" rel="stylesheet">
 </head>
 <body>
   <header>
@@ -20,21 +20,125 @@
         <a href="places.html">Places</a>
         <a href="hobbies.html">Hobbies</a>
         <button class="toggle-mode" onclick="toggleMode()" id="modeIcon" aria-label="Toggle light/dark mode">
-          <svg id="moonIcon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" stroke="#000000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-moon"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
+          <!-- Default moon -->
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" stroke="#000000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-moon"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
         </button>
       </div>
     </div>
   </header>
 
-  <main class="splash-main">
-    <img src="images/coming-soon.png" alt="Coming Soon" class="splash-logo" />
-    <h1 class="welcome-header">Coming Soon!</h1>
-    <p class="summary-text">
-      Emery is still working on this part of the site.<br />
-      Come back soon to explore more fun stuff!
-    </p>
+<section class="page-hero">
+  <h1 class="page-heading">Emery Game I've Played</h1>
+  <p class="page-tagline">Games I’ve played. Thoughts I’ve had.</p>
+</section>
+
+  <main>
+    <!-- Board Games -->
+    <section>
+      <h2>Board Games</h2>
+      <div class="game-grid">
+        <article class="game-card">
+          <img src="images/chronicles_of_avel.png" alt="Chronicles of Avel">
+          <h3>Chronicles of Avel</h3>
+          <p>Try to place traps so that when the main monster comes in it gets slowed down so you can defeat it.</p>
+        </article>
+
+        <article class="game-card">
+          <img src="images/dungeon!.png" alt="Dungeon!">
+          <h3>Dungeon!</h3>
+          <p>Pick your character and try to collect a certain amount of gold listed on your card to win.</p>
+        </article>
+
+        <article class="game-card">
+          <img src="images/first_carcassonne.png" alt="My First Carcassonne">
+          <h3>My First Carcassonne</h3>
+          <p>Pick from 4 different colored figures and take turns picking tiles from a pile to complete the path.</p>
+        </article>
+
+        <article class="game-card">
+          <img src="images/splendor.png" alt="Splendor">
+          <h3>Splendor</h3>
+          <p>Try to get 15 points to win; perfect for family nights.</p>
+        </article>
+
+        <article class="game-card">
+          <img src="images/ticket_to_ride_first.png" alt="Ticket to Ride: First Journey">
+          <h3>Ticket to Ride: First Journey</h3>
+          <p>Try to make the longest train track to win. It’s a perfect family game.</p>
+        </article>
+      </div>
+    </section>
+
+    <!-- Card Games -->
+    <section>
+      <h2>Card Games</h2>
+      <div class="game-grid">
+        <article class="game-card">
+          <img src="images/pokemon_tcg.png" alt="Pokemon TCG">
+          <h3>Pokemon Trading Card Game</h3>
+          <p>Try to knock out your opponents Pokémon 6 times to win.</p>
+        </article>
+
+        <article class="game-card">
+          <img src="images/birding_bingo.png" alt="Sibley Backyard Birding Bingo">
+          <h3>Sibley Backyard Birding Bingo</h3>
+          <p>Pick cards then see if you have a number or a picture that matches.</p>
+        </article>
+
+        <article class="game-card">
+          <img src="images/uno.png" alt="Uno">
+          <h3>Uno</h3>
+          <p>A fun quick card game where you try to discard all of your cards without gaining extra cards.</p>
+        </article>
+      </div>
+    </section>
+
+    <!-- Video Games -->
+    <section>
+      <h2>Video Games</h2>
+      <div class="game-grid">
+        <article class="game-card">
+          <img src="images/dragon_ball_sparkling.png" alt="DRAGON BALL: Sparkling! ZERO">
+          <h3>DRAGON BALL: Sparkling! ZERO</h3>
+          <p>Fans of DBZ will love this game; you can play the story of almost every character from Goku to Goku Black. You can play with friends and CPUs.</p>
+        </article>
+
+        <article class="game-card">
+          <img src="images/hp_quidditch.png" alt="Harry Potter: Quidditch Champions">
+          <h3>Harry Potter: Quidditch Champions</h3>
+          <p>Fans of Harry Potter and Quidditch will love this game; change position from Chaser, Keeper, Seeker and Beater. The game ends when you get 100 points or if your time limit runs out.</p>
+        </article>
+
+        <article class="game-card">
+          <img src="images/hogwarts_legacy.png" alt="Hogwarts Legacy">
+          <h3>Hogwarts Legacy</h3>
+          <p>Go into the Hogwarts world before Harry Potter and before Lord Voldemort. Learn and upgrade spells.</p>
+        </article>
+
+        <article class="game-card">
+          <img src="images/mario_kart_8.png" alt="Mario Kart 8 Deluxe">
+          <h3>Mario Kart 8 Deluxe</h3>
+          <p>A fun family racing game; if you like racing games then this is the game for you.</p>
+        </article>
+
+        <article class="game-card">
+          <img src="images/minecraft.png" alt="Minecraft">
+          <h3>Minecraft</h3>
+          <p>Build and craft. You can play creative or survival mode.</p>
+        </article>
+
+        <article class="game-card">
+          <img src="images/rocket_league.png" alt="Rocket League">
+          <h3>Rocket League</h3>
+          <p>If you like racing games and soccer then you’ll love this; control a car and try to hit a giant soccer ball into the goal.</p>
+        </article>
+      </div>
+    </section>
   </main>
 
+  <footer>
+    <p>&copy; 2025 E.S.V.</p>
+  </footer>
   <script src="script.js"></script>
 </body>
 </html>
